@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineGrid | Catálogo</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo"> <a href="../index.html">CINEGRID</a></div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="catalogo.html" style="color: var(--accent-color);">Catálogo</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="catalog-layout">
+
+        <aside class="filters-sidebar">
+            <h3>Filtrar por</h3>
+            
+            <div class="filter-group">
+                <label for="genre">Gênero</label>
+                <select id="genre">
+                    <option value="all">Todos</option>
+                    <option value="action">Ação</option>
+                    <option value="scifi">Ficção Científica</option>
+                    <option value="drama">Drama</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="year">Ano de Lançamento</label>
+                <select id="year">
+                    <option value="all">Todos</option>
+                    <option value="2026">2026</option>
+                    <option value="2025">2025</option>
+                    <option value="classic">Clássicos</option>
+                </select>
+            </div>
+
+            <button class="page-btn" style="background-color: var(--accent-color); border:none;">Aplicar Filtros</button>
+        </aside>
+
+        <section class="catalog-results">
+            <header class="catalog-header">
+                <h2>Explorar Catálogo</h2>
+                <span style="color: var(--text-muted);">Exibindo 6 de 18 filmes</span>
+            </header>
+
+            <div class="movie-grid">
+                <article class="movie-card">
+                    <img src="https://www.distrito13.com.br/wp-content/uploads/2012/12/cidade-das-sombras.jpg" alt="Filme 1" class="movie-poster">
+                    <div class="movie-info">
+                        <h3>Cidade das Sombras</h3>
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">Ação / Thriller</span>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <img src="https://mediaprd.adrenalinapura.com/wp-content/uploads/2024/05/11142155/JUSTABREATHAWAY_SOFA_20201015_3259_Poster_pt-BR.jpg" alt="Filme 2" class="movie-poster">
+                    <div class="movie-info">
+                        <h3>O Último Suspiro</h3>
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">Drama</span>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <img src="https://m.media-amazon.com/images/S/pv-target-images/371cd31e5bdde42b55152e1d7bfc26bda95904c9f9b6cdf5756c688ab2c110a8.jpg" alt="Filme 3" class="movie-poster">
+                    <div class="movie-info">
+                        <h3>Dark Planet</h3>
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">Ficção Científica</span>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <img src="https://static.wixstatic.com/media/32ce84_237a329e66744af095c18dc9e4c23fd5~mv2.jpg/v1/fill/w_280,h_394,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/noite-neon-cartaz-completo-final.jpg" alt="Filme 4" class="movie-poster">
+                    <div class="movie-info">
+                        <h3>Neón Nights</h3>
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">Cyberpunk</span>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <img src="https://play-lh.googleusercontent.com/UWBoQNcVanSUF9Guj56g-BttavKJfhrcZQ_LsG9NZ1hMv4k1fm65dDmSTzH9fsbKxByB=w240-h480-rw" alt="Filme 5" class="movie-poster">
+                    <div class="movie-info">
+                        <h3>Impacto Profundo</h3>
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">Sci-Fi / Terror</span>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Filme 6" class="movie-poster">
+                    <div class="movie-info">
+                        <h3>Corte Final</h3>
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">Documentário</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="pagination">
+                <button class="page-btn">&lt;</button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">&gt;</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <h2>CINEGRID</h2>
+        <p style="color: var(--text-muted);">© 2026 CineGrid. Desenvolvido para a disciplina de Desenvolvimento de Sites.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineGrid | Sobre o Projeto</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo"> <a href="../index.html">CINEGRID</a></div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="sobre.html" style="color: var(--accent-color);">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="about-container">
+        
+        <header class="about-header">
+            <h1>O que é o CineGrid?</h1>
+            <p>Um projeto acadêmico focado em exibir o verdadeiro poder e a flexibilidade do CSS Grid Layout na construção de interfaces web cinematográficas e modernas.</p>
+        </header>
+
+        <section class="institutional-grid">
+            <article class="institutional-card">
+                <h2>Missão</h2>
+                <p style="text-align: justify;">Proporcionar a melhor experiência de usuário no mapeamento e catalogação de obras cinematográficas, garantindo performance e responsividade irretocáveis em todos os dispositivos.</p>
+            </article>
+
+            <article class="institutional-card">
+                <h2>Visão</h2>
+                <p style="text-align: justify;">Tornar-se a referência em design de interfaces para plataformas de streaming na disciplina de Desenvolvimento de Sites, superando padrões convencionais.</p>
+            </article>
+
+            <article class="institutional-card">
+                <h2>Valores</h2>
+                <p style="text-align: justify;">Inovação, código limpo, estruturação semântica, acessibilidade e, acima de tudo, abandono de técnicas obsoletas de layout.</p>
+            </article>
+        </section>
+
+        <section class="tech-section">
+            <h2>Stack Tecnológico</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <span>HTML5</span>
+                    <small>Semântica</small>
+                </div>
+                <div class="tech-item">
+                    <span>CSS3</span>
+                    <small>Estilização Global</small>
+                </div>
+                <div class="tech-item">
+                    <span style="color: var(--accent-color);">CSS Grid</span>
+                    <small>Motor de Layout</small>
+                </div>
+                <div class="tech-item">
+                    <span>Mobile First</span>
+                    <small>Responsividade</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2 style="font-size: 2.5rem;">Fale Conosco</h2>
+                <p style="color: #ccc; line-height: 1.6;">Tem alguma dúvida sobre a estruturação deste layout ou quer enviar um feedback sobre a paleta de cores? Envie uma mensagem!</p>
+                <div style="margin-top: 1rem; display: grid; gap: 0.5rem; color: var(--accent-color); font-weight: bold;">
+                    <span>Email: contato@cinegrid.edu.br</span>
+                    <span>Local: Laboratório de Desenvolvimento Web</span>
+                </div>
+            </div>
+
+            <form class="contact-form" onsubmit="event.preventDefault();">
+                <input type="text" placeholder="Seu Nome Completo" required>
+                <input type="email" placeholder="Seu Endereço de E-mail" required>
+                <textarea placeholder="Sua Mensagem..." required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <h2>CINEGRID</h2>
+        <p style="color: var(--text-muted);">© 2026 CineGrid. Desenvolvido para a disciplina de Desenvolvimento de Sites.</p>
+    </footer>
+
+</body>
+</html>
